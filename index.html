@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="survey-form">
+        <!--HEADING START-->
+
+        <div class="headings">
+          <img
+            src="https://kinokuniya.vdcard.app/images/kinokuniya.png"
+            alt=""
+          />
+          <h1 id="title">Kinokuniya</h1>
+          <p id="description">Customer Online Survey</p>
+        </div>
+
+        <!--HEADINGS END-->
+
+        <!--INFO TAB START-->
+
+        <div class="info-tab">
+          <p class="description">We would like to know a little about you.</p>
+
+          <div class="top-row">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Full Name" required />
+            <label for="number" id="number-label">Age</label>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+
+          <div class="bottom-row">
+            <input
+              type="number"
+              id="number"
+              placeholder="Age"
+              min="1"
+              max="3"
+              required
+            />
+            <select id="dropdown">
+              <option value="student">Student</option>
+              <option value="self-studying">Self Studying</option>
+              <option value="freelance-work">Freelance Work</option>
+              <option value="fulltime-work">Fulltime Work</option>
+              <option value="not-mentioned">Prefer Not Mention</option>
+            </select>
+          </div>
+        </div>
+
+        <!--INFO TAB END-->
+
+        <!--Q TAB START-->
+
+        <div class="q-tab">
+          <p class="description q-desc">
+            Much appreciated if you could answer our little questions.
+          </p>
+          <section class="mobile-view">
+            <div class="left-tab">
+              <p>How often do you read books in a week?</p>
+            </div>
+            <div class="right-tab">
+              <ul>
+                <li>
+                  <input
+                    type="radio"
+                    name="frequency"
+                    value="everyday"
+                  />Everyday
+                </li>
+                <li>
+                  <input type="radio" name="frequency" value="5-6times" />5-6
+                  Times/Week
+                </li>
+                <li>
+                  <input type="radio" name="frequency" value="2-4times" />3-4
+                  Times/Week
+                </li>
+                <li>
+                  <input type="radio" name="frequency" value="1-2times" />1-2
+                  Times/Week
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    name="frequency"
+                    value="can't count"
+                  />Can't even count
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="mobile-view">
+            <div class="left-tab">
+              <p>Which books' genre you love to read the most?</p>
+            </div>
+            <div class="right-tab">
+              <ul>
+                <li>
+                  <input type="checkbox" name="genre" value="fiction" />Fiction
+                </li>
+                <li>
+                  <input type="checkbox" name="genre" value="novel" />Novel
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="genre"
+                    value="education"
+                  />Education
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="genre"
+                    value="biography"
+                  />Biography
+                </li>
+                <li>
+                  <input type="checkbox" name="genre" value="others" />Others
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="mobile-view">
+            <div class="left-tab">
+              <p>Leave us a comment to improve our stores!</p>
+            </div>
+            <div class="right-tab">
+              <textarea rows="5"> </textarea>
+            </div>
+          </section>
+        </div>
+
+        <!--Q TAB END-->
+
+        <!--SUBMIT START-->
+
+        <input type="submit" id="submit" class="submit-btn" />
+
+        <!--SUBMIT END-->
+      </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
